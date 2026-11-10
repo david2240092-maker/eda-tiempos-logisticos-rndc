@@ -1,0 +1,21 @@
+PROYECTO: EDA de tiempos logisticos del transporte de carga (RNDC, enero 2021)
+
+OVERLEAF
+1. Sube este .zip a Overleaf (New Project > Upload Project).
+2. Archivo principal: main.tex. Compilador: pdfLaTeX. La clase IEEEtran ya viene en Overleaf.
+3. Si Overleaf pide "Spanish", no hace falta instalar nada: babel-spanish esta incluido.
+
+REPRODUCIR EL ANALISIS (Python 3 con pandas, numpy, scipy, matplotlib)
+    python3 eda_tiempos_logisticos.py "Tiempos_Logisticos_de_cada_viaje_de_vehiculos_de_carga.csv" salida
+Regenera salida/figs, salida/tables, salida/numeros.tex y salida/results.json.
+Todas las cifras del texto salen de salida/numeros.tex (macros), asi que si cambian los datos
+o la limpieza, basta con volver a correr el script y recompilar.
+
+ARCHIVOS
+main.tex                      documento IEEE
+eda_tiempos_logisticos.py     script del EDA
+salida/figs/*.pdf             6 figuras
+salida/tables/*.tex           3 tablas
+salida/numeros.tex            cifras citadas en el texto
+salida/results.json           resultados completos (para consultar)
+El CSV original (322 MB) no se incluye; descargalo de https://www.datos.gov.co/d/tfrd-amb4
